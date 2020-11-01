@@ -1,5 +1,5 @@
 FROM debian
-
+MAINTAINER Maria Romero Angulo "m.romeroangulo@gmail.com"
 
 ARG DOCUMENTROOT=/srv/
 ARG SERVER_NAME=_
@@ -8,7 +8,6 @@ ENV DOCUMENTROOT=$DOCUMENTROOT
 ENV SERVER_NAME=$SERVER_NAME
 
 COPY css/ $DOCUMENTROOT/css
-COPY img/ $DOCUMENTROOT/img
 COPY index.html $DOCUMENTROOT/index.html
 COPY init.sh /init.sh
 
